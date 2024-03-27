@@ -1,0 +1,19 @@
+#bd
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#button
+{
+    background-color: rgb(299, 9, 20);
+}
+
+.buuton
+{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
