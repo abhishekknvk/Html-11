@@ -8,27 +8,18 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     
   </head>
-  <body id="bd">
-    <style>
-        body{
-            background-image: url(./images/IN-en-20240311-popsignuptwoweeks-perspective_alpha_website_small.jpg);
-        }
-    </style>
+  <body>
+    <div class="signin-container">
     <h1 >Sign In</h1>
-    <div id="buuton">
-      <label for="un"></label>
-      <input
-        type="text"
-        name="username or phone number"
-        value="username"
-        id="un"
-      />
+    <form>
+      <label for="un">Username</label><br>
+      <input type="text" name="username or phone number"value="" id="un"/> <br/>
+        <label for="pwd"></label>Password<br>
+        <input type="password" name="password" value="" id="pwd"><br>
+        <button id="button"> Sign In</button><br>
+        <label for="ck">Remember me</label>
+        <input type="checkbox" name="check box" value="chechkbox" id="ck"><br>
     </div>
-
-    <div id="buuton">
-        <label for="pwd"></label>
-        <input type="password" name="password" value="password" id="pwd">
-    </div>
-    <button id="button"> Sign In</button>
+  </form>
   </body>
 </html>
