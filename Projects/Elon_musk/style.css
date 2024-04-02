@@ -13,7 +13,7 @@
 
 /* Header styles */
 .header {
-    background-color: #222;
+    background-color: rgb(19, 142, 93);
     color: #fff;
     text-align: center;
     padding: 2rem 0;
@@ -58,7 +58,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #222;
+    background-color: rgb(19, 142, 93);
     color: #fff;
     text-align: center;
     padding: 2rem 0;
@@ -130,7 +130,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #222;
+    background-color: rgb(19, 142, 93);
     color: #fff;
 }
 
