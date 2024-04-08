@@ -48,6 +48,7 @@
     box-sizing: border-box;
 }
 
+
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
@@ -61,7 +62,7 @@ header {
     background-color: rgb(19, 142, 93);
     color: #fff;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 header h1 {
@@ -75,7 +76,7 @@ header p {
 
 /* Main content styles */
 main {
-    max-width: 800px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 2rem;
     background-color: #fff;
