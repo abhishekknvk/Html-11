@@ -51,8 +51,9 @@
 
 /* Body styles */
 body {
+   
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+  
     color: #333;
     line-height: 1.6;
 }
@@ -82,6 +83,13 @@ main {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+#spacex{
+    background-image:url(./40126461411_b1ed283d45_o.jpg) ;
+    background-position:left;
+    background-attachment:scroll;
+    color: #121111;
+
+}
 
 /* Section styles */
 section {
@@ -93,6 +101,10 @@ section h2 {
     margin-bottom: 1rem;
 }
 
+body{
+    background-image:url(./40126461411_b1ed283d45_o.jpg) ;
+    background-attachment: cover;
+}
 /* Form styles */
 form {
     display: flex;
