@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: rgb(14, 82, 41);
+        }
+        #counter {
+            font-size: 2em;
+            margin-bottom: 20px;
+            background-color: aqua;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: aqua;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="counter">0</div>
+        <div id="evenodd">Even</div>
+        <button id="increase">+</button>
+        <button id="decrease">-</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <script>
+        var counter = document.getElementById('counter');
+        var evenodd = document.getElementById('evenodd');
+        var increase = document.getElementById('increase');
+        var decrease = document.getElementById('decrease');
+        var reset = document.getElementById('reset');
+
+        increase.addEventListener('click', function() {
+            counter.textContent = parseInt(counter.textContent) + 1;
+            updateEvenOdd();
+        });
+
+        decrease.addEventListener('click', function() {
+            counter.textContent = parseInt(counter.textContent) - 1;
+            updateEvenOdd();
+        });
+
+        reset.addEventListener('click', function() {
+            counter.textContent = 0;
+            updateEvenOdd();
+        });
+
+        function updateEvenOdd() {
+            if (parseInt(counter.textContent) % 2 == 0) {
+                evenodd.textContent = 'Even';
+            } else {
+                evenodd.textContent = 'Odd';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- Absolutely! Here's a breakdown of how the code works:
+
+The HTML part of the code sets up the structure of the webpage. It includes a `div` for the counter,
+ a `div` for displaying whether the count is even or odd, and three buttons for increasing, decreasing, and resetting the count.
+
+The CSS part of the code styles the webpage. It centers the counter and buttons on the screen and sets the font and size of the text.
+
+The JavaScript part of the code makes the counter interactive. It starts by getting references to the counter `div` 
+and the three buttons using the `document.getElementById` function.
+
+Event listeners are added to the buttons using the `addEventListener` function. When the '+' button is clicked, 
+the count increases by 1. When the '-' button is clicked, the count decreases by 1. When the 'Reset' button is clicked, the count resets to 0.
+
+The `updateEvenOdd` function checks whether the count is even or odd by using the modulus operator (`%`). 
+If the count is divisible by 2 (i.e., the remainder when divided by 2 is 0), it's even. Otherwise, it's odd. 
+The function then updates the `evenodd` div to display 'Even' or 'Odd'.
+
+This is a simple example of how you can use HTML, CSS, and JavaScript together to create an interactive webpage. 
+Let me know if you have any other questions! 😊 -->
